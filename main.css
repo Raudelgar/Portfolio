@@ -1,0 +1,281 @@
+* {
+	margin: 0 auto;
+  box-sizing; border-box;
+}
+
+
+html, body {
+	height: 100%;
+}
+
+h1 h2 h3 h4 h5 h6 p {
+  font-family: Roboto, sans-serif;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0,0,0,.5);
+	z-index: 99;
+	text-align: right;
+  top: 0;
+  
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	margin-left: 30px;
+	line-height: 50px;
+}
+
+.icon-bar {
+  background-color: #fff;
+}
+
+
+.sect {
+	height: 50% auto;
+	/* background-color: #778899;  Remove once I get the image for eache section*/
+	background-size: cover;  /* to adjust the img to the screen*/
+	background-repeat: no-repeat; /* to adjust the img to the screen*/
+	background-attachment: fixed;
+  padding: 20px;
+}
+
+.subSection {
+	height: 50% auto;
+	background-color: 	#F0FFFF; 
+  background-size: cover;
+}
+
+.sectOne {
+	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/d7/6b/42/d76b428bad382b2f7ff72f72509f082d.jpg");
+  height: 80%;
+  display: flex;
+}
+
+.sectOne h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 20%;
+}
+
+.sectOne h4 {
+  text-align: center;
+  color: #fff;
+}
+
+#aboutSection {
+  margin-top: -20px;
+  padding-top: 30px;
+
+  background: -webkit-linear-gradient(left, #304352
+, #d7d2cc); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #304352
+, #d7d2cc); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #304352
+, #d7d2cc); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #304352
+, #d7d2cc); /* Standard syntax */
+  color: #fff;
+  
+}
+
+
+.sectTwo {
+	background-image: url("http://s3.amazonaws.com/zipcodewilmington/wp-content/uploads/20150327225201/java-source-code.jpg");
+  height: 80% auto;
+  margin-top: -20px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+#textportfolio {
+  color: #04071C;
+  text-shadow: 0px 0px 6px rgba(12,12,13,0.7);
+  
+}
+
+figcaption {
+  color: #000;
+  font-size: 20px;
+  text-shadow: 0px 0px 6px rgba(12,12,13,0.7);
+}
+
+#contactSection {
+  margin-top: -20px;
+  height: 80%;
+  padding-top: 20px;
+  background-image: url("http://www.wallpapers-web.com/data/out/133/4944336-mailbox-wallpapers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: -20px;
+  padding-top: 50px;
+}
+
+.form-group {
+  color: #fff;
+}
+
+legend {
+  color: #fff;
+}
+
+#footerSection {
+	height: 20%;
+  background: -webkit-linear-gradient(left top, #434343, #000000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #434343, #000000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #434343, #000000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #434343, #000000); /* Standard syntax */
+}
+
+#footerSection h5 {
+  color: #fff;
+  
+  
+}
+
+/*social media home*/
+.social1 ul {
+	display: flex;
+	position: relative;
+	top: 50%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+}
+
+.social1 ul li {
+	list-style: none;
+}
+
+.social1 ul li a {
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 35px;
+	margin: 0 10px;
+	display: block;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	border: 3px solid #fff;
+	z-index: 1;
+}
+
+.social1-home {
+  margin-top: 10%;
+}
+
+.social1 ul li a .fa {
+	position: relative;
+	color: #262626;
+	transition: .5s;
+}
+
+.social1 ul li a:hover .fa {
+	color: #fff;
+	transform: rotateY(360deg);
+	z-index: 3;
+}
+
+.social1 ul li a:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f00;
+	transition: .5s;
+	z-index: 2;
+}
+
+.social1 ul li a:hover:before {
+	top: 0;
+}
+
+.social1 ul li:nth-child(1) a:before {
+	background: #006400;
+}
+
+.social1 ul li:nth-child(2) a:before {
+	background: #6e5494;
+}
+
+.social1 ul li:nth-child(3) a:before {
+	background: #0077B5;
+}
+
+.social1 ul li:nth-child(4) a:before {
+	background: #55acee;
+}
+
+/*social media footer*/
+
+.social2 ul {
+	display: flex;
+	position: absolute;
+	buttom: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.social2 ul li {
+	list-style: none;
+  
+}
+
+.social2 ul li a {
+	
+  font-size: 35px;
+  margin: 0 10px;
+}
+
+.social2 ul li a .fa {
+	color: #fff;
+}
+
+.social2 ul li:nth-child(1) a:hover .fa {
+	color: #006400;
+}
+
+.social2 ul li:nth-child(2) a:hover .fa {
+	color: #6e5494;
+}
+
+.social2 ul li:nth-child(3) a:hover .fa {
+	color: #0077B5;
+}
+
+.social2 ul li:nth-child(4) a:hover .fa {
+	color: #55acee;
+}
+
+
+#myphoto img {
+  border-radius: 50%;
+}
+
+.figure img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75);
+    margin-bottom:20px;
+}
+
+.figure img:hover {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+}
+
+#success_message{ 
+  display: none;
+}
+
